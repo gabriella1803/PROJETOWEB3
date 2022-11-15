@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina inicial</title>
+    <%- include ("partials/cabecalho.ejs")%>
+    
+</head>
+<body>
+     <div class="container vstack gap-4">
+        <img src="https://www.zarla.com/images/zarla-ultrasade-1x1-2400x2400-20211216-vfwktymhmprrfk88x648.png?crop=1:1,smart&width=250&dpr=2"
+        class="img-fluid mx-auto d-block">
+    </div>  
+    <div>
+      <p class="fs-5 text-center fw-bold text-primary text-center">"O médico que apenas sabe medicina,nem medicina sabe" - Abel Salazar</p>
+     
+    </div>
+    
+  <div>
+    <p class="fs-5 text-center fw-bold text-success">Horários de funcionamento</p>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Segundas - Sextas</td>
+            <td>08:00 - 20:00h</td>
+           
+          </tr>
+          <tr>
+            <td>Sábados</td>
+            <td>08:00 - 20:00h</td>
+            
+          </tr>
+
+        </tbody>
+    </table>
+  </div>
+  <div>
+    <p class="fs-5 text-center fw-bold text-success">Atendimento</p>
+    <p class="fw-semibold text-primary text-center">(87)98123-4567</p>
+
+  </div>
+    
+    
+</body>
+<footer>
+    <%- include ("partials/rodape.ejs")%>
+</footer>
+</html>

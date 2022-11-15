@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Detalhes Paciente </title>
+    <%- include ("partials/cabecalho.ejs")%>
+</head>
+<body>
+    <div class="container">
+        <h3>Detalhes</h3>
+        
+   <div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <ul class="list-group list-group-flush">
+
+            <li class="list-group-item"> Código:<%=resultado.codigo %></li>
+            <li class="list-group-item"> Nome:<%=resultado.nome %></li>
+            <li class="list-group-item"> Idade: <%=resultado.idade %></li>
+            <li class="list-group-item"> Cpf: <%=resultado.cpf %></li>
+            <li class="list-group-item"> Telefone:<%=resultado.telefone %></li>
+          
+        </ul>
+    
+          <a href= "/paciente/"class="btn btn-primary">Voltar</a>
+        </body>
+     </div>
+        <footer>
+            <%- include ("partials/rodape.ejs")%>
+        </footer>
+      </html>
+     
+
+
+
+
+
+
+
+
+
+

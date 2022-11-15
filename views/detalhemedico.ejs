@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes Médico</title>
+    <%- include ("partials/cabecalho.ejs")%>
+</head>
+<body>
+    <div class="container">
+        <h3>Detalhes</h3>
+        
+   <div class="card" style="width: 18rem;">
+    <div class="card-body ">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"> CRM:<%=resultado2.crm %></li>
+            <li class="list-group-item"> Nome:<%=resultado2.nome %></li>
+            <li class="list-group-item"> Idade: <%=resultado2.idade %></li>
+            <li class="list-group-item"> Cpf: <%=resultado2.cpf %></li>
+            <li class="list-group-item"> Telefone: <%=resultado2.telefone %></li>
+            <li class="list-group-item"> Especialidade: <%=resultado2.especialidade %></li>
+
+    
+        </ul>
+    
+<a href= "/medico/"class="btn btn-primary">Voltar</a>
+
+</body>
+</div>
+    <footer>
+          <%- include ("partials/rodape.ejs")%>
+    </footer>
+</html>
+   
+
+
+
+
+
+
+
+
+
+

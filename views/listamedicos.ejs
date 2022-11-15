@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Médicos</title>
+    <%- include ("partials/cabecalho.ejs")%>
+</head>
+<body>
+    <div class="container">
+        <h1>LISTA MÉDICOS</h1>
+        <table class="table table-striped">
+                <tr>
+                  <th>CRM</th>
+                  <th>NOME</th>
+                  <th>IDADE</th>
+                  <th>CPF</th>
+                  <th>TELEFONE</th>
+                  <th>ESPECIALIDADE</th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <% for(let pessoaMedico of listarMedico){%>
+                <tr>
+                    <td><%=pessoaMedico.crm%></td>
+                    <td><%=pessoaMedico.nome%></td>
+                    <td><%=pessoaMedico.idade%></td>
+                    <td><%=pessoaMedico.cpf%></td>
+                    <td><%=pessoaMedico.telefone%></td>
+                    <td><%=pessoaMedico.especialidade%></td>
+                    <td><a href="/medico/<%=pessoaMedico.crm%>">Detalhes</a></td>
+                    <td><a href="/medico/cadastrar/<%=pessoaMedico.crm%>">Atualizar</a></td>
+                    <td><a onclick=" return confirm ('Deseja mesmo remover?')" href="/medico/deletar/<%=pessoaMedico.crm%>">Excluir</a></td>
+                    </tr>
+    
+                <% }%>
+        </table>
+<a href= "/"class="btn btn-primary">Voltar</a>
+              
+</body>
+    </div>
+              
+<footer>
+     <%- include ("partials/rodape.ejs")%>
+</footer>
+                 
+</html>
+              
